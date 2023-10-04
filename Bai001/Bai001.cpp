@@ -4,8 +4,8 @@ using namespace std;
 int main()
 {
 	int n;
-	cout << "Nhap n:";
 	cin >> n;
-	cout << "Hello world";
+	for (int i = 0; i < n; i++)
+		cin >> i;
 	return 0;
 }
