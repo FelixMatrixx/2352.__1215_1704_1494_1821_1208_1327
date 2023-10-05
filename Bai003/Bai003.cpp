@@ -6,7 +6,8 @@ void Nhap(string, int[], int&);
 void Xuat(int[], int);
 int main()
 {
-	int a[10], n;
+	int a[100];
+	int n;
 	Nhap("Bai003.txt", a, n);
 	Xuat(a, n);
 	return 0;
