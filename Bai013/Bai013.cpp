@@ -32,7 +32,7 @@ void Xuat(int a[], int n)
 bool ktNguyenTo(int k)
 {
 	int dem = 0;
-	for (int i = 0; i < k; i++)
+	for (int i = 1; i <= k; i++)
 		if (k % i == 0)
 			dem++;
 	if (dem == 2)
@@ -41,7 +41,7 @@ bool ktNguyenTo(int k)
 }
 void LietKe(int a[], int n)
 {
-	cout << "\nCac so duong trong mang la:";
+	cout << "\nVi tri cac so nguyen to trong mang la: ";
 	for (int i = 0; i < n; i++)
 		if (ktNguyenTo(a[i]))
 			cout << setw(8) << i;
