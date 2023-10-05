@@ -1,7 +1,7 @@
 #include<iostream>
 
 using namespace std;
-void Nhap(float[], int);
+void Nhap(float[], int&);
 float TongDuong(float[], int);
 float DemDuong(float[], int);
 float TrungBinhCong(float a[], int n);
@@ -9,13 +9,13 @@ int main()
 {
 	float a[100];
 	int n;
-	cin >> n;
 	Nhap(a, n);
 	float tbc = TrungBinhCong(a, n);
 	cout << tbc;
 }
-void Nhap(float a[], int n)
+void Nhap(float a[], int& n)
 {
+	cin >> n;
 	for (int i = 0; i <= n - 1; i++)
 	{
 		cin >> a[i];

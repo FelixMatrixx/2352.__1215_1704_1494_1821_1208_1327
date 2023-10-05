@@ -1,19 +1,19 @@
 #include<iostream>
 
 using namespace std;
-void Nhap(float[], int);
+void Nhap(float[], int&);
 int AmDau(float[], int);
 void LietKe(float[], int);
 int main()
 {
 	float a[100];
 	int n;
-	cin >> n;
 	Nhap(a, n);
 	LietKe(a, n);
 }
-void Nhap(float a[], int n)
+void Nhap(float a[], int& n)
 {
+	cin >> n;
 	for (int i = 0; i <= n - 1; i++)
 	{
 		cin >> a[i];
