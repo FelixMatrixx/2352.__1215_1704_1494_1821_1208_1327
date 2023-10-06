@@ -1,14 +1,18 @@
 #include <iostream>
 #include <iomanip>
+
 using namespace std;
+
 void Nhap(float[], int&);
-void LietKe(float[], int);
+float TongCucDai(float[], int);
+
 int main()
 {
-	float b[500];
+	float a[500];
 	int n;
-	Nhap(b, n);
-	LietKe(b, n);
+	Nhap(a, n);
+	float s  = TongCucDai(a, n);
+	cout << "Tong cac gia tri cuc dai: " << s;
 	return 0;
 }
 void Nhap(float a[], int& n)
@@ -21,16 +25,17 @@ void Nhap(float a[], int& n)
 		cin >> a[i];
 	}
 }
-void LietKe(float a[], int n)
+float TongCucDai(float a[], int n)
 {
-	cout << "\nCac gia tri cuc dai: ";
-	if (n == 1)
-		return;
+	if (n <= 1)
+		return 0;
+	float s = 0;
 	if (a[0] > a[1])
-		cout << a[0] << setw(8);
+		s += a[0];
 	for (int i = 1; i < n - 1; i++)
-		if (a[i - 1] < a[i] && a[i] > a[i+1])
-			cout << a[i] << setw(8);
+		if (a[i - 1] < a[i] && a[i] > a[i + 1])
+			s += a[i];
 	if (a[n - 2] < a[n - 1])
-		cout << a[n - 1];
+		s += a[n - 1];
+	return s;
 }
