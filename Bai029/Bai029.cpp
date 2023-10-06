@@ -33,6 +33,7 @@ int ChanDau(int a[], int& n)
 int ChanLonNhat(int a[], int n)
 {
 	int lc = ChanDau(a, n);
+	if (lc == -1)
 		return -1;
 	for (int i = 0; i <= n - 1; i++)
 		if (a[i] % 2 == 0 && a[i] > lc)

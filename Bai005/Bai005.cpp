@@ -1,8 +1,6 @@
 #include <iostream>
 #include <iomanip>
 using namespace std;
-void Nhap(int[], int&);
-void Xuat(int[], int);
 void LietKe(int[], int);
 int main()
 {
