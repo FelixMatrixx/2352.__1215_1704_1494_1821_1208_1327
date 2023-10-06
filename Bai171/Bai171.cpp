@@ -1,19 +1,29 @@
 #include<iostream>
 
 using namespace std;
-void Nhap(int[], int&);
-
+void NhapGiam(float[], int&);
 int main()
 {
-	int a[100];
+	float a[100];
 	int n;
-	Nhap(a, n);
-	
+	NhapGiam(a, n);
 	return 0;
 }
-void Nhap(int a[], int& n)
+void NhapGiam(float a[], int& n)
 {
+	cout << "Nhap n: ";
 	cin >> n;
-	for (int i = 0; i <= n - 1; i++)
-		cin >> a[i];
+	for (int i = 0; i < n; i++)
+	{
+		float x;
+		cout << "Nhap a[" << i << "]: ";
+		cin >> x;
+		int j = i - 1;
+		while (j >= 0 && a[j] < x)
+		{
+			a[j + 1] = a[j];
+			j--;
+		}
+		a[j + 1] = x;
+	}
 }

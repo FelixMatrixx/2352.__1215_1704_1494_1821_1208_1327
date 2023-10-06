@@ -10,6 +10,7 @@ int main()
 	Nhap(a, n);
 	float tong = Tong(a,n);
 	cout << tong;
+	return 0;
 }
 void Nhap(float a[], int& n)
 {
