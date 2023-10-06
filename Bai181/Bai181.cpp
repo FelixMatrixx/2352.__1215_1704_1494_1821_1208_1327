@@ -4,14 +4,16 @@
 using namespace std;
 
 void Nhap(int[], int&);
-void XuatCon(int[], int);
+int ktCon(int[], int, int);
+int DemConGiam(int[], int);
 
 int main()
 {
 	int a[500];
 	int n;
 	Nhap(a, n);
-	XuatCon(a, n);
+	int dem = DemConGiam(a, n);
+	cout << "So mang con giam: " << dem;
 	return 0;
 }
 void Nhap(int a[], int& n)
@@ -24,17 +26,24 @@ void Nhap(int a[], int& n)
 		cin >> a[i];
 	}
 }
-void XuatCon(int a[], int n)
+int ktCon(int a[], int l, int vt)
 {
-	cout << "\nCac phan tu trong mang sau xu ly: ";
+	int flag = 1;
+	for (int i = 0; i <= l - 2; i++)
+		if (a[i + vt] < a[i + vt + 1])
+			flag = 0;
+	return flag;
+}
+int DemConGiam(int a[], int n)
+{
+	int dem = 0;
 	for (int l = 1; l <= n; l++)
 	{
-		cout << "\nMang con co " << l << " phan tu: ";
 		for (int vt = 0; vt <= n - l; vt++)
-			{
-			for (int i = 0; i < l; i++)
-				cout << setw(8) << a[vt + i];
-			cout << " | ";
-			}
+		{
+			if (ktCon(a, l, vt) == 1)
+				dem++;
+		}
 	}
+	return dem;
 }
