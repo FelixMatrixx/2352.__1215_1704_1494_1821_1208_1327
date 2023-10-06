@@ -10,7 +10,7 @@ int TimChuSo(int[], int);
 int main()
 {
 	int a[500];
-	int n, x;
+	int n;
 	Nhap(a, n);
 	cout << "Chu so xuat hien nhieu nhat: " << TimChuSo(a, n);
 	return 0;

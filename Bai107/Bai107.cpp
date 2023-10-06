@@ -10,7 +10,7 @@ int TimGiaTri(int[], int);
 int main()
 {
 	int a[500];
-	int n, x;
+	int n;
 	Nhap(a, n);
 	cout << "Gia tri xuat hien nhieu nhat: " << TimGiaTri(a, n);
 	return 0;
