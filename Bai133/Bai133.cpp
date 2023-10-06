@@ -6,6 +6,7 @@ using namespace std;
 void Nhap(float[], int&);
 void XayDung(float[], int, float[], int&);
 void Xuat(float[], int);
+
 int main()
 {
 	float a[500];
