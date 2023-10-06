@@ -17,7 +17,7 @@ int main()
 void InBaiTap(int nn)
 {
 	int dem = 0;
-	cout << "\nTong so bai tap ban phai lam: " << dem;
+
 	cout << "Bai tap can phai lam la: ";
 	for (int i = 1; i <= MAX_BAI_TAP; i++)
 	{
@@ -27,4 +27,5 @@ void InBaiTap(int nn)
 			cout << setw(10) << i;
 		}
 	}
+	cout << "\nTong so bai tap ban phai lam: " << dem;
 }
