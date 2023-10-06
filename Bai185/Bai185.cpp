@@ -5,16 +5,15 @@ using namespace std;
 
 void Nhap(float[], int&);
 int ktCon(float[], int, int, int);
-void DuongDaiNhat(float[], int, int&, int&);
+void DuongDaiNhat(float[], int);
 void Xuat(float[], int);
 
 int main()
 {
 	float a[500];
-	int n, vtd, vtc;
+	int n;
 	Nhap(a, n);
-	DuongDaiNhat(a, n, vtd, vtc);
-	Xuat(a, n);
+	DuongDaiNhat(a, n);
 	return 0;
 }
 void Nhap(float a[], int& n)
@@ -35,17 +34,16 @@ int ktCon(float a[], int n, int vt, int l)
 			flag = 0;
 	 return flag;
  }
-void DuongDaiNhat(float a[], int n, int& vtd, int& vtc)
+void DuongDaiNhat(float a[], int n)
 {
 	for (int l = n; l >= 1; l--)
 		for (int vt = 0; vt <= n - l; vt++)
 			if (ktCon(a, n, vt, l) == 1)
 			{
-				vtd = vt;
-				vtc = vt + l - 1;
+				for (int i = 0; i < l; i++)
+					cout << setw(8) << a[vt + i];
 				return;
 			}
-	vtd = vtc = -1;
 }
 void Xuat(float a[], int n)
 {
