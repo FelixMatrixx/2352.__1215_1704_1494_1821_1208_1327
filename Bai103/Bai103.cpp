@@ -12,7 +12,7 @@ int main()
 	Nhap(a, n);
 	int lc = ChanNhoNhat(a, n);
 	if (lc == -1)
-		cout << "Mang khong co so chan.";
+		cout << "Mang kh co so chan.";
 	else
 		cout << "So chan nho nhat trong mang la: " << lc;
 	return 0;
