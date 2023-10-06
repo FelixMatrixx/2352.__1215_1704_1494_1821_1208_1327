@@ -10,6 +10,7 @@ int main()
 	int n;
 	Nhap(a, n);
 	int dem = DemNguyenTo(a, n);
+	cout << "So luong so nguyen to trong mang: " << dem;
 	return 0;
 }
 void Nhap(int a[], int& n)
