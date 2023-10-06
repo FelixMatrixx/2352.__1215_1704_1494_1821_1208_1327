@@ -3,13 +3,13 @@
 #include <cmath>
 using namespace std;
 void Nhap(float[], int&);
-float Max(float[], int);
+int Timvitri(float[], int);
 int main()
 {
 	int n;
 	float a[100];
 	Nhap(a, n);
-	cout << "Gia tri lon nhat la " << Max(a, n);
+	cout << Timvitri(a, n);
 	return 0;
 }
 void Nhap(float a[], int& n)
@@ -22,13 +22,13 @@ void Nhap(float a[], int& n)
 		cin >> a[i];
 	}
 }
-float Max(float a[], int n)
+int Timvitri(float a[], int n)
 {
-	float max = a[0];
-	for (int i = 1; i < n; i++)
+
+	for (int i = 1; i < n - 1; i++)
 	{
-		if (a[i] > max)
-			max = a[i];
+		if (a[i] == a[i - 1] * a[i + 1])
+			return i;
 	}
-	return max;
+	return -1;
 }
