@@ -35,7 +35,6 @@ void HoanVi(int& a, int& b)
 }
 void DuaVeDau(int a[], int n)
 {
-	int b[100];
 	int k = 0;
 	for (int i = 0; i <= n - 1; i++)
 		if (a[i] % 3 == 0)
@@ -43,7 +42,7 @@ void DuaVeDau(int a[], int n)
 }
 void Xuat(int a[], int n)
 {
-	cout << "Mang duoc nguyen hoa: ";
+	cout << "Cac phan tu trong mang sau xu ly: ";
 	for (int i = 0; i < n; i++)
 		cout << setw(8) << a[i];
 }
