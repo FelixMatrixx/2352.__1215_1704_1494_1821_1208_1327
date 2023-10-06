@@ -12,7 +12,7 @@ int main()
 	float a[500];
 	int n;
 	float x;
-	cout << "Nhap n: ";
+	cout << "Nhap so phan tu n: ";
 	cin >> n;
 	for (int i = 0; i < n; i++)
 	{
