@@ -30,16 +30,15 @@ void Nhap(float a[], int& n)
 }
 void XayDung(float a[], int n, float b[], int& m)
 {
-	int dem = 0;
 	m = 0;
 	for (int i = 0; i < n; i++)
 		if (a[i] < 0)
 		{
-			b[m] = a[i];
-			dem++;
-			m++;
+			cout << "Truoc: " << m;
+			b[m++] = a[i];
+			cout << "Sau: " << m;
+			cout << "\n";
 		}
-
 }
 void Xuat(float a[], int n)
 {
