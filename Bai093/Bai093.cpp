@@ -1,21 +1,21 @@
 #include<iostream>
 
 using namespace std;
-void Nhap(int[], int);
+void Nhap(int[], int&);
 bool ktDang2m(int);
 int TimGiaTri(int[], int);
 int main()
 {
 	int a[100];
 	int n;
-	cin >> n;
 	Nhap(a, n);
 	int kq = TimGiaTri(a, n);
 	cout << kq;
 	return 0;
 }
-void Nhap(int a[], int n)
+void Nhap(int a[], int& n)
 {
+	cin >> n;
 	for (int i = 0; i <= n - 1; i++)
 		cin >> a[i];
 }

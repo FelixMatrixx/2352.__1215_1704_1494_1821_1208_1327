@@ -1,20 +1,20 @@
 #include<iostream>
 
 using namespace std;
-void Nhap(int[], int);
+void Nhap(int[], int&);
 int ChuSoDau(int);
 int TongGiaTri(int[], int);
 int main()
 {
 	int a[100];
 	int n;
-	cin >> n;
 	Nhap(a, n);
 	int tong = TongGiaTri(a, n);
 	cout << tong;
 }
-void Nhap(int a[], int n)
+void Nhap(int a[], int& n)
 {
+	cin >> n;
 	for (int i = 0; i <= n - 1; i++)
 	{
 		cin >> a[i];

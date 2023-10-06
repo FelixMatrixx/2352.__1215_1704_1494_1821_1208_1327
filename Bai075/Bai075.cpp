@@ -1,7 +1,7 @@
 #include<iostream>
 
 using namespace std;
-void Nhap(float[], int);
+void Nhap(float[], int&);
 float XaNhat(float[], int, float);
 int main()
 {
@@ -15,8 +15,9 @@ int main()
 	cout << lc;
 	return 0;
 }
-void Nhap(float a[], int n)
+void Nhap(float a[], int& n)
 {
+	cin >> n;
 	for (int i = 0; i <= n - 1; i++)
 		cin >> a[i];
 }
