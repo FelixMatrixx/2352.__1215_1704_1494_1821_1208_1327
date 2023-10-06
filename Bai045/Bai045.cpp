@@ -12,6 +12,7 @@ int main()
 	Nhap(a, n);
 	float tbc = TrungBinhCong(a, n);
 	cout << tbc;
+	return 0;
 }
 void Nhap(float a[], int& n)
 {

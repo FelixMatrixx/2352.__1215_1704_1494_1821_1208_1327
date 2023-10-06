@@ -11,6 +11,7 @@ int main()
 	int x, y;
 	cin >> x >> y;
 	LietKe(a, n, x, y);
+	return 0;
 }
 void Nhap(int a[], int& n)
 {

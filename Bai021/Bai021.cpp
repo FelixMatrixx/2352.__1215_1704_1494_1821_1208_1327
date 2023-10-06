@@ -9,6 +9,7 @@ int main()
 	int n;
 	Nhap(a, n);
 	LietKe(a, n);
+	return 0;
 }
 void Nhap(int a[], int& n)
 {

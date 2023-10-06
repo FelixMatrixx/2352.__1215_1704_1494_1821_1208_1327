@@ -11,6 +11,7 @@ int main()
 	Nhap(a, n);
 	int tong = TongGiaTri(a, n);
 	cout << tong;
+	return 0;
 }
 void Nhap(int a[], int& n)
 {
