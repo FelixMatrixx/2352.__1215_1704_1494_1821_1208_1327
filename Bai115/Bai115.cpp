@@ -29,7 +29,7 @@ void GanNhat(float a[], int n)
 	float y = a[1];
 	float lc = abs(x - y);
 	for (int i = 0; i <= n - 2; i++)
-		for (int j = i + 1; j <= j - 1; j++)
+		for (int j = i + 1; j <= n - 1; j++)
 		{
 			float temp = abs(a[i] - a[j]);
 			if (temp < lc)
