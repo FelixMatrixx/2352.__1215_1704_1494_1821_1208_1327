@@ -125,6 +125,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Bai091", "Bai091\Bai091.vcx
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Bai097", "Bai097\Bai097.vcxproj", "{BC29A03F-3330-46D4-B33A-263F5BCAD29C}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Bai103", "Bai103\Bai103.vcxproj", "{EED5421E-7C6B-4DF6-8D04-33AF6B2CA737}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -621,6 +623,14 @@ Global
 		{BC29A03F-3330-46D4-B33A-263F5BCAD29C}.Release|x64.Build.0 = Release|x64
 		{BC29A03F-3330-46D4-B33A-263F5BCAD29C}.Release|x86.ActiveCfg = Release|Win32
 		{BC29A03F-3330-46D4-B33A-263F5BCAD29C}.Release|x86.Build.0 = Release|Win32
+		{EED5421E-7C6B-4DF6-8D04-33AF6B2CA737}.Debug|x64.ActiveCfg = Debug|x64
+		{EED5421E-7C6B-4DF6-8D04-33AF6B2CA737}.Debug|x64.Build.0 = Debug|x64
+		{EED5421E-7C6B-4DF6-8D04-33AF6B2CA737}.Debug|x86.ActiveCfg = Debug|Win32
+		{EED5421E-7C6B-4DF6-8D04-33AF6B2CA737}.Debug|x86.Build.0 = Debug|Win32
+		{EED5421E-7C6B-4DF6-8D04-33AF6B2CA737}.Release|x64.ActiveCfg = Release|x64
+		{EED5421E-7C6B-4DF6-8D04-33AF6B2CA737}.Release|x64.Build.0 = Release|x64
+		{EED5421E-7C6B-4DF6-8D04-33AF6B2CA737}.Release|x86.ActiveCfg = Release|Win32
+		{EED5421E-7C6B-4DF6-8D04-33AF6B2CA737}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
