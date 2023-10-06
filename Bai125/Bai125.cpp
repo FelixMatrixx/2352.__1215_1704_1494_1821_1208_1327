@@ -3,18 +3,18 @@
 
 using namespace std;
 
-void Nhap(int[], int&);
-int ktTonTai(int[], int);
+void Nhap(float[], int&);
+int ktTang(float[], int);
 
 int main()
 {
-	int a[500];
+	float a[500];
 	int n;
 	Nhap(a, n);
-	cout << ktTonTai(a, n);
+	cout << ktTang(a, n);
 	return 0;
 }
-void Nhap(int a[], int& n)
+void Nhap(float a[], int& n)
 {
 	cout << "Nhap so phan tu n: ";
 	cin >> n;
@@ -24,11 +24,11 @@ void Nhap(int a[], int& n)
 		cin >> a[i];
 	}
 }
-int ktTonTai(int a[], int n)
+int ktTang(float a[], int n)
 {
-	int flag = 0;
-	for (int i = 0; i < n; i++)
-		if (a[i] % 2 == 0)
-			flag = 1;
+	int flag = 1;
+	for (int i = 0; i <= n - 2; i++)
+		if (a[i] > a[i + 1])
+			flag = 0;
 	return flag;
 }
