@@ -4,7 +4,7 @@
 using namespace std;
 
 void Nhap(int[], int&);
-void Hoanvi(int&, int&);
+void HoanVi(int&, int&);
 void DuaVeDau(int[], int);
 void Xuat(int[], int);
 
@@ -27,7 +27,7 @@ void Nhap(int a[], int& n)
 		cin >> a[i];
 	}
 }
-void Hoanvi(int& a, int& b)
+void HoanVi(int& a, int& b)
 {
 	int temp = a;
 	a = b;
