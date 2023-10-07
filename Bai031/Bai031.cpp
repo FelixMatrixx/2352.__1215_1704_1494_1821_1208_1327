@@ -31,3 +31,4 @@ void LietKe(float a[], int n)
 			if (i != j && a[i] <= a[j])
 				cout << "(" << a[i] << "," << a[j] << ")";
 }
+

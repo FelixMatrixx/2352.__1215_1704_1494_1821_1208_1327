@@ -53,3 +53,5 @@ void Xuat(int n)
 {
 	cout << "Gia tri thoa man yeu cau bai toan la: " << n;
 }
+
+

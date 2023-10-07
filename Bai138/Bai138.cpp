@@ -45,6 +45,6 @@ void Xuat(int a[], int n)
 {
 	for (int i = 0; i < n; i++)
 	{
-		cout << " Gia tri a[" << i << "] = " << a[i] << endl;
+		cout << setw(6) << a[i];
 	}
 }

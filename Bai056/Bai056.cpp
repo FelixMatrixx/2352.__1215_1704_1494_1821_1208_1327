@@ -45,3 +45,4 @@ void Xuat(int dem)
 	cout << "So luong so hoan thien la: " << dem;
 }
 
+

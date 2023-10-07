@@ -43,3 +43,5 @@ void Xuat(int lc)
 {
 	cout << "Vi tri gia tri am lon nhat la: " << lc;
 }
+
+

@@ -28,3 +28,4 @@ void Xuat(float a[], int n)
 	for (int i = 0; i <= n - 1; i++)
 		cout << setw(10) <<setprecision(5)<< a[i];
 }
+

@@ -44,3 +44,5 @@ void Xuat(float lc)
 	cout << "Gia tri duong nho nhat: " << lc;
 }
 
+
+

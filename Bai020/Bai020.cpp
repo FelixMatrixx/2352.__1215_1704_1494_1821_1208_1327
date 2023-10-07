@@ -33,3 +33,4 @@ void Lietke(int a[], int n)
 	if (a[n - 1] < a[n - 2])
 		cout << a[n - 1];
 }
+

@@ -35,3 +35,5 @@ void LietKe(int a[], int n)
 		if (ktChinhPhuong(a[i]))
 			cout << i << " ";
 }
+
+

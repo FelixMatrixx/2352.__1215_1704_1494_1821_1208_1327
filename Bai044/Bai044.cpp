@@ -62,3 +62,4 @@ void Xuat(int S)
 {
 	cout << "Tong cac phan tu cuc tri: " << S;
 }
+
