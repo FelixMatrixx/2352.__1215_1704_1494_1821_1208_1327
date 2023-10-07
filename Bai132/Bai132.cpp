@@ -37,6 +37,6 @@ void xaydung(int a[], int b[], int n)
 	}
 	for (int i = 0; i < dem; i++)
 	{
-		cout << "b[" << i << "] = " << b[i] << endl;
+		cout << setw(6) << b[i] ;
 	}
 }

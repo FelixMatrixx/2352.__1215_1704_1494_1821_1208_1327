@@ -3,18 +3,19 @@
 #include <cmath>
 using namespace std;
 void Nhap(int[], int&);
-void Hoanvi(int&, int&);
-void Sapgiam(int[], int);
+void Xoavitri(int[], int&, int);
+void Xoasochan(int[], int&);
 void Xuat(int[], int);
-int main() {
+int main()
+{
 	int n;
 	int a[100];
 	Nhap(a, n);
-	Sapgiam(a, n);
+	Xoasochan(a, n);
 	Xuat(a, n);
 	return 0;
 }
-void Nhap(int  a[], int& n)
+void Nhap(int a[], int& n)
 {
 	cout << "Nhap n ";
 	cin >> n;
@@ -24,21 +25,20 @@ void Nhap(int  a[], int& n)
 		cin >> a[i];
 	}
 }
-void Hoanvi(int& a, int& b)
+void Xoavitri(int a[], int& n, int k)// k la vi tri trong mang cang xoa
 {
-	int temp = a;
-	a = b;
-	b = temp;
-}
-void Sapgiam(int a[], int n)
-{
-	for (int i = 0; i < n-1; i++)
+	for (int i = k; i < n - 1; i++)
 	{
-		for (int j = i + 1; j < n; j++)
-		{
-			if (a[i] < a[j])
-				Hoanvi(a[i], a[j]);
-		}
+		a[i] = a[i + 1];
+	}
+	n = n - 1;
+}
+void Xoasochan(int a[], int& n)
+{
+	for (int i = n - 1; i >= 0; i--)
+	{
+		if (a[i] % 2 == 0)
+			Xoavitri(a, n, i);
 	}
 }
 void Xuat(int a[], int n)

@@ -2,19 +2,20 @@
 #include <iomanip>
 #include <cmath>
 using namespace std;
-void Nhap(int[], int&);
-void Hoanvi(int&, int&);
-void Sapgiam(int[], int);
-void Xuat(int[], int);
-int main() {
+void Nhap(float[], int&);
+void Hoanvi(float&, float&);
+void Sapxep(float[], int);
+void Xuat(float[], int);
+int main()
+{
 	int n;
-	int a[100];
+	float a[100];
 	Nhap(a, n);
-	Sapgiam(a, n);
+	Sapxep(a, n);
 	Xuat(a, n);
 	return 0;
 }
-void Nhap(int  a[], int& n)
+void Nhap(float a[], int& n)
 {
 	cout << "Nhap n ";
 	cin >> n;
@@ -24,24 +25,24 @@ void Nhap(int  a[], int& n)
 		cin >> a[i];
 	}
 }
-void Hoanvi(int& a, int& b)
+void Hoanvi(float& a, float& b)
 {
-	int temp = a;
+	float temp = a;
 	a = b;
 	b = temp;
 }
-void Sapgiam(int a[], int n)
+void Sapxep(float a[], int n)
 {
-	for (int i = 0; i < n-1; i++)
+	for (int i = 0; i < n - 1; i++)
 	{
 		for (int j = i + 1; j < n; j++)
 		{
-			if (a[i] < a[j])
+			if (a[j] == 1)
 				Hoanvi(a[i], a[j]);
 		}
 	}
 }
-void Xuat(int a[], int n)
+void Xuat(float a[], int n)
 {
 	for (int i = 0; i < n; i++)
 	{
