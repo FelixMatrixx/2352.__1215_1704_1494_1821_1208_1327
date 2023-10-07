@@ -30,7 +30,7 @@ int ChuSoDau(int n)
 }
 void LietKe(int a[], int n)
 {
-	for (int i=0; i<=n-1; i++)
-		if (ChuSoDau(a[i])%2!=0)
-			cout << a[i];
+	for (int i = 0; i <= n - 1; i++)
+		if (ChuSoDau(a[i]) % 2 != 0)
+			cout << a[i] << " ";
 }

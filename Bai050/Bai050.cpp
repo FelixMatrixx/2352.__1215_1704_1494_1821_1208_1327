@@ -1,15 +1,14 @@
 #include <iostream>
 using namespace std;
 void Nhap(int[], int&);
-int ChuSoDau(int n);
-int Tong(int[], int);
+int DemChuSoChan(int[], int);
 void Xuat(int);
 int main()
 {
 	int a[500];
 	int k;
 	Nhap(a, k);
-	Xuat(Tong(a, k));
+	Xuat(DemChuSoChan(a, k));
 	return 0;
 }
 void Nhap(int a[], int &n)
@@ -22,24 +21,15 @@ void Nhap(int a[], int &n)
 		cin >> a[i];
 	}
 }
-int ChuSoDau(int n)
+int DemChuSoChan(int a[], int n)
 {
-	int dt = abs(n);
-	while(dt >= 10)
-		dt /= 10;
-	return dt;
-}
-int Tong(int a[], int n)
-{
-	int S = 0;
+	int dem = 0;
 	for (int i = 0; i <= n - 1; i++)
-	{
-		if (ChuSoDau(a[i]) % 2 != 0)
-			S += a[i];
-	}
-	return S;
+		if (a[i] % 2 == 0)
+			dem++;
+	return dem;
 }
-void Xuat(int S)
+void Xuat(int dem)
 {
-	cout << "Tong cac gia tri co chu so dau tien la chu so le: " << S;
+	cout << "So luong gia tri chan la: " << dem;
 }

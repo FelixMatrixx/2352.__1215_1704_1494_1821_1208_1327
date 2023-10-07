@@ -2,24 +2,23 @@
 using namespace std;
 void Nhap(int[], int&);
 int ChuSoDau(int);
-int TongGiaTri(int[], int);
-void Xuat(int[], int);
+int TimGiaTri(int[], int);
+void Xuat(int);
 int main()
 {
-	int a[500];
+	int a[100];
 	int k;
 	Nhap(a, k);
-	int S = TongGiaTri(a, k);
-	cout << S;
+	Xuat(TimGiaTri(a, k));
 	return 0;
 }
-void Nhap(int a[], int& n)
+void Nhap(int a[], int &n)
 {
 	cout << "Nhap so phan tu cua mang: ";
 	cin >> n;
-	for (int i = 0; i < n; i++)
+	for (int i = 0; i <= n - 1; i++)
 	{
-		cout << "Nhap a[" << i << "]=";
+		cout << "Nhap a[" << i << "]= ";
 		cin >> a[i];
 	}
 }
@@ -27,23 +26,17 @@ int ChuSoDau(int n)
 {
 	int dt = abs(n);
 	while (dt >= 10)
-	{
 		dt /= 10;
-		return dt;
-	}
+	return dt;
 }
-int TongGiaTri(int a[], int n)
+int TimGiaTri(int a[], int n)
 {
 	for (int i = 0; i <= n - 1; i++)
-	{
-		int S = 0;
 		if (ChuSoDau(a[i]) % 2 != 0)
-		{
-			S = S + a[i];
-			cout << S;
-			return S;
-		}
-	}
+			return a[i];
+		return 0;
 }
-
-
+void Xuat(int n)
+{
+	cout << "Gia tri dau tien co chu so dau la chu so le: " << n;
+}
