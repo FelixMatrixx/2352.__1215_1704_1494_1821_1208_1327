@@ -1,26 +1,20 @@
 #include <iostream>
 using namespace std;
-void Nhap(float[], int&);
-
+void Nhap(int[], int);
 int main()
 {
-	float a[100];
-	int k;
-	Nhap(a, k);
-	return 0;
+
 }
-void Nhap(float a[], int& n)
+void Nhap(int a[], int &n)
 {
 	cout << "Nhap so phan tu cua mang: ";
 	cin >> n;
+	if (n <= 2)
+		return ;
 	for (int i = 0; i < n; i++)
 	{
-		cout << "Nhap a[" << i << "]=";
+		cout << "Nhap a[" << i << "]= ";
 		cin >> a[i];
 	}
 }
-
-
-
-
 

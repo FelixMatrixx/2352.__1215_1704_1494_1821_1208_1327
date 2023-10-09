@@ -1,4 +1,5 @@
 #include <iostream>
+#include <iomanip>
 using namespace std;
 void Nhap(int[], int&);
 bool ktChinhPhuong(int);
@@ -33,7 +34,7 @@ void LietKe(int a[], int n)
 {
 	for (int i = 0; i <= n - 1; i++)
 		if (ktChinhPhuong(a[i]))
-			cout << i << " ";
+			cout << setw(4) << i;
 }
 
 
